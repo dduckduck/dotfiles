@@ -1,2 +1,4 @@
 # dotfiles
-confs for the tools i use
+My setup for alacritty, nvim and tmux.
+
+
