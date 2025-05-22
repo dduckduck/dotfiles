@@ -57,18 +57,14 @@ return {
     -- Mason
     require("mason").setup()
 
-    require("mason-lspconfig").setup({
-      ensure_installed = vim.tbl_keys(languages),
-      automatic_installation = true,
-    })
+ -- Mason-lspconfig
+local mason_lspconfig = require("mason-lspconfig")
 
-    require("mason-lspconfig").setup_handlers({
-      function(server_name)
-        local opts = languages[server_name] or {}
-        opts.capabilities = vim.tbl_deep_extend("force", {}, capabilities, opts.capabilities or {})
-        require("lspconfig")[server_name].setup(opts)
-      end,
-    })
+mason_lspconfig.setup({
+  ensure_installed = vim.tbl_keys(languages),
+  automatic_installation = true,
+})
+
 
     require("mason-tool-installer").setup({
       ensure_installed = tools,
