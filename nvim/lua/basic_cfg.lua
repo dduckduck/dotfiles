@@ -11,3 +11,7 @@ vim.opt.wrap = false
 vim.opt.list = true
 vim.opt.listchars:append("space:·")
 vim.opt.clipboard="unnamedplus"
+vim.wo.foldmethod = 'expr'
+vim.wo.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.wo.foldnestmax = 1
+vim.wo.foldlevel=99
