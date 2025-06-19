@@ -1,9 +1,5 @@
 [window]
-opacity = 0.8
-padding.x = 10
-padding.y = 10
-decorations = "Full"
-decorations_theme_variant = "Dark" # "Light"
+# opacity = 0.97
 
 [font]
 normal.family = "JetBrains Mono Nerd Font"
@@ -11,5 +7,9 @@ bold.family = "JetBrains Mono Nerd Font"
 italic.family = "JetBrains Mono Nerd Font"
 bold_italic.family = "JetBrains Mono Nerd Font"
 
-size = 12
+size = 11
+
+[colors.primary]
+background = "#1f1f28"
+foreground = "#dcd7ba"
 
